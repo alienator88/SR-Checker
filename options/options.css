@@ -1,0 +1,125 @@
+html, body {
+  background-color:rgb(54, 54, 54);
+  width: fit-content;
+  }
+
+  .main {
+  padding: 0px 40px 40px 40px;
+}
+
+
+.borderdiv {
+padding: 20px;
+border: 1px;
+border-style: hidden;
+border-radius: 8px;
+background-color: rgb(63, 63, 63);
+color: white;
+box-shadow: 0 1px #ed4c5f;
+width: auto;
+}
+
+
+.audiolabel {
+font-size: medium;
+color: white;
+vertical-align: middle;
+}
+
+.button {
+width: 100px;
+border-style: solid;
+border-radius: 10px;
+border-color: rgba(240, 248, 255, 0);
+padding: 10px;
+background-color: #ed4c5f;
+color: rgb(255, 255, 255);
+box-shadow: 0 2px #c7404f;
+margin-left: 4px;
+}
+
+.button:hover {
+background-color: #d34354;
+box-shadow: 0 2px #aa3744;
+}
+
+.button:active {
+
+transform: translateY(1px);
+}
+
+/* .timefield {
+border-style: solid;
+border-radius: 6px;
+border-color: rgba(240, 248, 255, 0);
+padding: 2px;
+background-color: rgb(56, 56, 56);
+color: white;
+box-shadow: 0 2px rgb(43, 43, 43);
+} */
+
+
+/*Slider Switch Theme ==========================*/
+
+
+/* The switch - the box around the slider */
+.switch {
+position: relative;
+display: inline-block;
+width: 45px;
+height: 27px;
+vertical-align: middle;
+
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+/* The slider */
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgb(44, 44, 44);
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 21px;
+width: 22px;
+left: 3px;
+bottom: 3px;
+background-color: rgb(59, 59, 59);
+}
+
+input:checked + .slider {
+background-color: #ed4c5f;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px #ed4c5f;
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(18px);
+-ms-transform: translateX(18px);
+transform: translateX(18px);
+}
+
+/* Rounded sliders */
+.slider.round {
+border-radius: 17px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+

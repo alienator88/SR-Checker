@@ -1,0 +1,40 @@
+{
+  
+  "description": "Check if I have any SRs waiting in the Needs Attention quadrant",
+  "manifest_version": 2,
+  "name": "SR Checker",
+  "version": "2.3",
+  "homepage_url": "https://github.com/alienator88",
+  "icons": {
+    "64": "images/check.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://support.us.oracle.com/oip/faces/secure/srm/supporthome/SPHome.jspx?mc=true"],
+      "js": ["scripts/check.js"]
+    }
+  ],
+
+  "options_ui": {
+    "page": "options/options.html"
+  },
+
+  "permissions": ["storage"],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "lupascu.marius@gmail.com"
+    }
+  },
+ 
+  "browser_action": {
+    "browser_style": true,
+    "default_popup": "options/options.html",
+    "default_icon": {
+      "64": "images/check.png"
+    }
+  }
+
+
+}
