@@ -11,7 +11,7 @@
 
   "content_scripts": [
     {
-      "matches": ["https://support.us.oracle.com/oip/faces/secure/srm/supporthome/SPHome.jspx?mc=true"],
+      "matches": ["DASHBOARD URL HERE"],
       "js": ["scripts/check.js"]
     }
   ],
@@ -24,7 +24,7 @@
 
   "browser_specific_settings": {
     "gecko": {
-      "id": "lupascu.marius@gmail.com"
+      "id": "FIREFOX DEVELOPER EMAIL HERE"
     }
   },
  
