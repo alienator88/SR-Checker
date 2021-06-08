@@ -54,6 +54,7 @@ function check() {
     var SR = document.evaluate('/html/body/form/span/div/table[3]/tbody/tr/td[1]/table/tbody/tr[1]/td/table/tbody/tr/td/div/div[2]/div/div/div/div/div/div[1]/span[7]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.innerHTML.toString().substring(14, 16);
     if (SR > 0) {
         window.speechSynthesis.speak(msg);
+        document.title='Support Portal' + ' ' + '(' + SR + ' )';
     }
 };
 
